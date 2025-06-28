@@ -44,7 +44,16 @@ public class User {
         this.phoneNumber = phoneNumber;
         this.role = role;
     }
-
+    // Add this to your User.java entity
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", email='" + email + '\'' +
+                ", fullName='" + fullName + '\'' +
+                ", role=" + role +
+                '}';
+    }
     // Getters and Setters
 
     public Long getId() {
